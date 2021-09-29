@@ -1,7 +1,7 @@
 'use strict';
 
 exports.aceInitInnerdocbodyHead = (hookName, args, cb) => {
-  const url = '/static/plugins/ep_embedmedia/static/css/ace.css';
+  const url = '../static/plugins/ep_embedmedia/static/css/ace.css';
   args.iframeHTML.push(`<link rel="stylesheet" type="text/css" href="${url}"/>`);
   cb();
 };
@@ -94,7 +94,7 @@ exports.cleanEmbedCode = (orig) => {
   }
 
   if (!res) {
-    return "<img src='/static/plugins/ep_embedmedia/static/html/invalid.png'>";
+    return "<img src='../static/plugins/ep_embedmedia/static/html/invalid.png'>";
   }
 
   return res;
