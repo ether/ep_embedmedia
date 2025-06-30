@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Avengium",
-			"Jakeukalane"
+			"Jakeukalane",
+			"Ovruni"
 		]
 	},
+	"ep_embedmedia.embed": "Incrustar contenido multimedia",
 	"ep_embedmedia.code": "Pega un enlace o código de inserción aquí:",
+	"ep_embedmedia.insert": "Insertar contenido multimedia",
 	"ep_embedmedia.cancel": "Cancelar"
 }
