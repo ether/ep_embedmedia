@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Albano",
+			"Beta16"
+		]
+	},
+	"ep_embedmedia.embed": "Incorpora contenuti multimediali",
+	"ep_embedmedia.code": "Incolla un link o un codice incorporato qui:",
+	"ep_embedmedia.insert": "Inserisci media",
+	"ep_embedmedia.cancel": "Annulla"
+}
