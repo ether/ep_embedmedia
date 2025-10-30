@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Usagi.02808"
+		]
+	},
+	"ep_embedmedia.embed": "Osadź media",
+	"ep_embedmedia.code": "Wklej tutaj link lub kod do osadzenia:",
+	"ep_embedmedia.insert": "Wstaw media",
+	"ep_embedmedia.cancel": "Anuluj"
+}
