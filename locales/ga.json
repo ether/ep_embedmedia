@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aindriu80"
+		]
+	},
+	"ep_embedmedia.embed": "Leabaigh Meáin",
+	"ep_embedmedia.code": "Greamaigh nasc nó cód leabaithe anseo:",
+	"ep_embedmedia.insert": "Cuir isteach meáin",
+	"ep_embedmedia.cancel": "Cealaigh"
+}
