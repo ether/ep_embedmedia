@@ -7,7 +7,7 @@ Embed video etc into your Etherpad pad.
 ![Screenshot](https://user-images.githubusercontent.com/220864/99982432-74a73880-2da2-11eb-826c-cf59548c1d98.PNG)
 
 ## Installing
-npm install ep_embedmedia
+pnpm run plugins install ep_embedmedia
 
 or Use the Etherpad ``/admin`` interface.
 
