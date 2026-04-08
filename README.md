@@ -1,4 +1,4 @@
-![Publish Status](https://github.com/ether/ep_embedmedia/workflows/Node.js%20Package/badge.svg) ![Backend Tests Status](https://github.com/ether/ep_embedmedia/workflows/Backend%20tests/badge.svg)
+![Publish Status](https://github.com/ether/ep_embedmedia/workflows/Node.js%20Package/badge.svg) [![Backend Tests Status](https://github.com/ether/ep_embedmedia/actions/workflows/test-and-release.yml/badge.svg)](https://github.com/ether/ep_embedmedia/actions/workflows/test-and-release.yml)
 
 # Embed Media into Etherpad
 Embed video etc into your Etherpad pad.
