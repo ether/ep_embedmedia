@@ -41,7 +41,9 @@ exports.aceCreateDomLine = (hookName, args, cb) => {
 
 const parseUrlParams = (url) => {
   const res = {};
-  url.split('?')[1].split('&').map((item) => {
+  const query = url.split('?')[1];
+  if (!query) return res;
+  query.split('&').map((item) => {
     item = item.split('=');
     res[item[0]] = item[1];
   });
