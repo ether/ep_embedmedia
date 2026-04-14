@@ -1,11 +1,11 @@
 'use strict';
 
 $(document).ready(() => {
-  $('#insertEmbedMedia').click(() => {
+  $('#insertEmbedMedia').on('click', () => {
     $('#embedMediaModal').toggleClass('popup-show');
   });
 
-  $('#doEmbedMedia').click(() => {
+  $('#doEmbedMedia').on('click', () => {
     const padeditor = require('ep_etherpad-lite/static/js/pad_editor').padeditor;
     $('#embedMediaModal').toggleClass('popup-show');
 
@@ -20,7 +20,7 @@ $(document).ready(() => {
     }, 'embedMedia');
   });
 
-  $('#cancelEmbedMedia').click(() => {
+  $('#cancelEmbedMedia').on('click', () => {
     $('#embedMediaModal').toggleClass('popup-show');
   });
 });
