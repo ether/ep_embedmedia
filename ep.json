@@ -9,6 +9,7 @@
 	"eejsBlock_body": "ep_embedmedia/hooks:eejsBlock_body"
       },
       "client_hooks": {
+        "postAceInit": "ep_embedmedia/static/js/hooks:postAceInit",
         "aceInitInnerdocbodyHead": "ep_embedmedia/static/js/hooks:aceInitInnerdocbodyHead",
         "aceAttribsToClasses": "ep_embedmedia/static/js/hooks:aceAttribsToClasses",
         "aceCreateDomLine": "ep_embedmedia/static/js/hooks:aceCreateDomLine"

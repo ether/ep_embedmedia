@@ -1,5 +1,33 @@
 'use strict';
 
+// Bind the modal's click handlers once the editor is available. The
+// previous implementation lived in static/js/main.js and used a global
+// require() to fetch padeditor — modern Etherpad doesn't expose require
+// to page scripts, so it threw "require is not defined". postAceInit
+// gives us context.ace directly with no module lookup needed.
+exports.postAceInit = (hookName, {ace}) => {
+  $('#insertEmbedMedia').on('click', () => {
+    $('#embedMediaModal').toggleClass('popup-show');
+  });
+
+  $('#doEmbedMedia').on('click', () => {
+    $('#embedMediaModal').toggleClass('popup-show');
+    return ace.callWithAce((ace) => {
+      const rep = ace.ace_getRep();
+      ace.ace_replaceRange(rep.selStart, rep.selEnd, 'E');
+      ace.ace_performSelectionChange(
+          [rep.selStart[0], rep.selStart[1] - 1], rep.selStart, false);
+      ace.ace_performDocumentApplyAttributesToRange(
+          rep.selStart, rep.selEnd,
+          [['embedMedia', escape($('#embedMediaSrc')[0].value)]]);
+    }, 'embedMedia');
+  });
+
+  $('#cancelEmbedMedia').on('click', () => {
+    $('#embedMediaModal').toggleClass('popup-show');
+  });
+};
+
 exports.aceInitInnerdocbodyHead = (hookName, args, cb) => {
   const url = '../static/plugins/ep_embedmedia/static/css/ace.css';
   args.iframeHTML.push(`<link rel="stylesheet" type="text/css" href="${url}"/>`);
