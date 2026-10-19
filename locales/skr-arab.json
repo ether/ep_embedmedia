@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saraiki"
+			"Saraiki",
+			"Tauqeerkhansurani"
 		]
 	},
 	"ep_embedmedia.embed": "ایمبیڈ میڈیا",
+	"ep_embedmedia.code": "ایتھے کوئی لنک یا ایمبیڈ کوڈ چسپاں کرو",
 	"ep_embedmedia.insert": "میڈیا پاؤ",
 	"ep_embedmedia.cancel": "منسوخ"
 }
